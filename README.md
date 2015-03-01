@@ -26,7 +26,7 @@ A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
 5. Check the system stack size:<br>
    $ ulimit -s<br>
    8192<br>
-   # cat /etc/security/limits.conf | grep stack<br>
+   $ sudo cat /etc/security/limits.conf | grep stack<br>
    *   soft  stack  8192<br>
    *   hard  stack  8192
 
