@@ -8,7 +8,7 @@ A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
 
 2. Download and unpack steamcmd (http://media.steampowered.com/installer/steamcmd_linux.tar.gz)
 
-3. Download ARMA II, ARMA II: OA and the beta packages using steamcmd:
+3. Download Arma 3 Dedicated Server using steamcmd:
    <pre>
    $ steamcmd/steamcmd.sh +login STEAM_USERNAME STEAM_PASSWORD +force_install_dir /home/user/epoch
    > app_update 233780 validate
@@ -28,5 +28,7 @@ A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
 6. Run ./restarter.pl<br>
    $ screen -r<br>
    Press Ctrl+A+D to detach the screen.
+
+7. https://community.bistudio.com/wiki/Arma_3_Dedicated_Server
 
 Please do not forget that the production server must run by "restarter.pl" !
