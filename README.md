@@ -18,6 +18,7 @@ A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
 
 4. Install the required packages:<br>
    $ sudo apt-get install libhiredis-dev<br>
+   $ sudo apt-get install libstdc++6<br>
    $ sudo apt-get install g++-multilib<br>
    For 64-bit only:<br>
    $ sudo apt-get install lib32stdc++6
