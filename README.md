@@ -23,13 +23,20 @@ A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
    For 64-bit only:<br>
    $ sudo apt-get install lib32stdc++6
 
-5. Run ./epoch.sh for test<br>
+5. Check the system stack size:<br>
+   $ ulimit -s<br>
+   8192<br>
+   # cat /etc/security/limits.conf | grep stack<br>
+   *   soft  stack  8192<br>
+   *   hard  stack  8192
+
+6. Run ./epoch.sh for test<br>
    Watch the messages - they might inform you whether your installation failed!
 
-6. Run ./restarter.pl<br>
+7. Run ./restarter.pl<br>
    $ screen -r<br>
    Press Ctrl+A+D to detach the screen.
 
-7. https://community.bistudio.com/wiki/Arma_3_Dedicated_Server
+8. https://community.bistudio.com/wiki/Arma_3_Dedicated_Server
 
 Please do not forget that the production server must run by "restarter.pl" !
