@@ -1,2 +1,32 @@
 # Arma3-Epoch-Linux-Server
-A private hive Arma3 Epoch server on Linux
+A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
+
+# Installation instructions
+
+1. The following programs must be installed on your Linux system: screen, redis, perl.
+   <pre># apt-get install perl screen redis</pre>
+
+2. Download and unpack steamcmd (http://media.steampowered.com/installer/steamcmd_linux.tar.gz)
+
+3. Download ARMA II, ARMA II: OA and the beta packages using steamcmd:
+   <pre>
+   $ steamcmd/steamcmd.sh +login STEAM_USERNAME STEAM_PASSWORD +force_install_dir /home/user/epoch
+   > app_update 233780 validate
+   > quit
+   </pre>
+   Download and install Arma3 Epoch Mod 0.2.5.2 (http://epochmod.com/download.php).
+
+4. Install the required packages:<br>
+   $ sudo apt-get install libhiredis-dev<br>
+   $ sudo apt-get install g++-multilib<br>
+   For 64-bit only:<br>
+   $ sudo apt-get install lib32stdc++6
+
+5. Run ./epoch.sh for test<br>
+   Watch the messages - they might inform you whether your installation failed!
+
+6. Run ./restarter.pl<br>
+   $ screen -r<br>
+   Press Ctrl+A+D to detach the screen.
+
+Please do not forget that the production server must run by "restarter.pl" !
