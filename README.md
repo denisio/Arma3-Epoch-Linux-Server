@@ -1,6 +1,10 @@
 # Arma3-Epoch-Linux-Server
 A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
 
+<font color=red>
+I don't modified "a3_epoch_server.pbo" and "epochserver.so" is not derivative.
+</p>
+
 # Installation instructions
 
 1. The following programs must be installed on your Linux system: screen, redis, perl.
