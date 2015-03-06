@@ -18,7 +18,10 @@ I don't modified "a3_epoch_server.pbo" and "epochserver.so" is not derivative.
    > app_update 233780 validate
    > quit
    </pre>
-   Download and install Arma3 Epoch Mod 0.2.5.2 (http://epochmod.com/downloads/Epoch_0.2.5.2_RC1.zip.torrent).
+   Download and install Arma3 Epoch Mod 0.2.5.2 (http://epochmod.com/downloads/Epoch_0.2.5.2_RC1.zip.torrent).<br><br>
+
+   <b>ANY uppercase letter in a filename will crash the server!</b>
+   $ for x in *; do mv $x `echo $x | tr [A-Z] [a-z]`; done
 
 4. Install the required packages:<br>
    $ sudo apt-get install libhiredis-dev<br>
