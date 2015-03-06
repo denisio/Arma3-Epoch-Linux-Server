@@ -18,7 +18,7 @@ I don't modified "a3_epoch_server.pbo" and "epochserver.so" is not derivative.
    > app_update 233780 validate
    > quit
    </pre>
-   Download and install Arma3 Epoch Mod 0.2.5.2 (http://epochmod.com/download.php).
+   Download and install Arma3 Epoch Mod 0.2.5.2 (http://epochmod.com/downloads/Epoch_0.2.5.2_RC1.zip.torrent).
 
 4. Install the required packages:<br>
    $ sudo apt-get install libhiredis-dev<br>
