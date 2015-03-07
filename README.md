@@ -7,8 +7,8 @@ I don't modified "a3_epoch_server.pbo" and "epochserver.so" is not derivative.
 
 # Installation instructions
 
-1. The following programs must be installed on your Linux system: screen, redis, perl.
-   <pre># apt-get install perl screen redis</pre>
+1. The following programs must be installed on your Linux system: screen, redis-server, perl.
+   <pre># apt-get install perl screen redis-server</pre>
 
 2. Download and unpack steamcmd (http://media.steampowered.com/installer/steamcmd_linux.tar.gz)
 
