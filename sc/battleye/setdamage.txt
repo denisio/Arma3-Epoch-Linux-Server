@@ -1,1 +1,1 @@
-5 "" !="Sapper_Charge_Ammo" !="Epoch_Sapper_F"
+5 "" !="" !="Sapper_Charge_Ammo" !="SapperB_Charge_Ammo" !="Epoch_Sapper_F"  !="Epoch_SapperB_F"

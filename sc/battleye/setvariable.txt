@@ -1,2 +1,1 @@
 5 "" !=(Offer|Accept|BUILD_SLOT|TRADE_ACTIVE|last_targeter)
-1 ""

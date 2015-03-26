@@ -6,4 +6,3 @@
 5 "preprocessFile"
 5 "tostring"
 5 "\.sqf"
-1 ""
