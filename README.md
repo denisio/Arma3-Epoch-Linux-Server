@@ -1,5 +1,5 @@
 # Arma3-Epoch-Linux-Server
-A private hive Arma3 Epoch 0.2.5.2 server on Linux (Steam)
+A private hive Arma3 Epoch 0.3.0.1 server on Linux (Steam)
 
 <b>
 I don't modified "a3_epoch_server.pbo" and "epochserver.so" is not derivative.
@@ -18,7 +18,7 @@ I don't modified "a3_epoch_server.pbo" and "epochserver.so" is not derivative.
    > app_update 233780 validate
    > quit
    </pre>
-   Download and install Arma3 Epoch Mod 0.2.5.2 (http://epochmod.com/downloads/Epoch_0.2.5.2_RC1.zip.torrent).<br><br>
+   Download and install Arma3 Epoch Mod 0.3.0.1 (http://epochmod.com/downloads/@Epoch_0.3.0.1.zip.torrent).<br><br>
    <b>ANY uppercase letter in a filename/dir will crash the server!</b>
    <pre>
    $ for x in *; do mv $x `echo $x | tr [A-Z] [a-z]`; done
