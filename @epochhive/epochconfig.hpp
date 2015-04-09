@@ -5,10 +5,10 @@ BuildingSlotsLimit = 1500; // Max building slots allowed. Warning! Higher the nu
 StaticDateTime[] = {2035,6,10,7,0}; // {0,0,0,8,0} would forces the server to start at 8am each time it is started while allowing the year, month and day to stay real time. Any values left at 0 will result in no change.
 timeDifference = 0; // Server uses real time this will allow you to offset just the hour.
 timeMultiplier = 4; // Sets a time multiplier for in-game time. The command range is now capped at 0.1 - 120 to avoid performance problems.
-lootMultiplier = 0.5; // 1 = max loot bias 
+lootMultiplier = 0.5; // 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
 // Events
 WeatherChangeTime = 1200; // This controls how fast the weather changes as well as how fast shipping containers and earthquakes happen.
-WeatherStaticForecast[] = {}; // Default: {75.5,0,{0,0,0},0,{0,0}}; // Clear day; {19,1,{1,1,40},1,{5,5}}; // Cold Foggy Rainy Overcast Windy; Format: {temp <scalar>,rain <scalar>,fog <array>,overcast <scalar>,wind <array>} 
+WeatherStaticForecast[] = {}; // Default: {75.5,0,{0,0,0},0,{1,1}}; // Clear day; {19,1,{1,1,40},1,{5,5}}; // Cold Foggy Rainy Overcast Windy; Format: {temp <scalar>,rain <scalar>,fog <array>,overcast <scalar>,wind <array>} 
 events[] = {
 	{ 3600, "CarnivalSpawner" }, // SECOND <scalar>, EVENT <string>
 	{ 1200, "EarthQuake" },
@@ -76,10 +76,10 @@ NPCSlotsLimit = 50; // Max number of traders static or dynamic. Warning! Higher 
 forceStaticTraders = true; // disables traders moving from work to home
 
 // Markers
-SHOW_TRADERS  = true; // Show locations of traders
-SHOW_JAMMERS  = true; // Shows location of base jammers 
+SHOW_TRADERS = true; // Show locations of traders
+SHOW_JAMMERS = false; // Shows location of base jammers 
 SHOW_BOATLOOT = true; // Shows the location of shipwreck loot 
-DEBUG_VEH     = false; // DEBUG ONLY used to debug spawing of vehicles
+DEBUG_VEH = false; // DEBUG ONLY used to debug spawing of vehicles
 
 // Hive Related
 expiresBuilding = "604800";  // expiration date in seconds for buildings
@@ -88,3 +88,8 @@ expiresBank = "7776000";  // expiration date in seconds for players bank
 expiresVehicle = "604800";  // expiration date in seconds for vehicles
 expiresAIdata = "604800";  // expiration date in seconds for NPC Trader inventory
 hiveAsync = false; // true = asynchronous hive calls (non blocking), false = synchronous hive calls (blocking)
+
+// Admin Features
+hiveAdminCmdExec = false; // true = enables extra (To Be Released) feature to allow execution of code via hive.
+hiveAdminSavePlayerList = true; // true = enables saving of playerUID array to hive value PLAYERS:#InstanceID.
+hiveAdminCmdTime = 5; // how many seconds between each command queue call.
